@@ -15,10 +15,10 @@ class MedicalInsurance():
         self.region = region
         
     def load_model(self):
-        with open(r"C:\Users\Admin\Downloads\python\Medical\project_app\Linear_model.pkl","rb") as f:
+        with open(r"project_app\Linear_model.pkl","rb") as f:
             self.model = pickle.load(f)
                 
-        with open(r"C:\Users\Admin\Downloads\python\Medical\project_app\project_data.json","r") as f:
+        with open(r"project_app\project_data.json","r") as f:
             self.json_data = json.load(f)
                 
     def get_predication(self):
