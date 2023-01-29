@@ -3,7 +3,7 @@ from flask import Flask,jsonify,render_template,request
 from project_app.utilis import MedicalInsurance
 import json
 import pickle
-import config
+# import config
 
 app = Flask(__name__)
 
@@ -44,4 +44,4 @@ def get_pred():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',port=config.PORT_NUMBER,debug=True)
+    app.run(host='0.0.0.0',port=8080,debug=False)
