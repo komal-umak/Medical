@@ -1,0 +1,1 @@
+print("*"*10 ,"This is INIT Function Project APP","*"*10)

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Insurance Project</title>
+</head>
+<style>
+    body{
+        background-color: rgb(139, 131, 185);
+        background-image:url("https://aihms.in/blog/wp-content/uploads/2022/03/health-insurance1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    h1{
+        font-size:40px;
+        color: darkblue;
+        font-style: unset;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    h2{
+        font-size: 20px;
+        color:black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        grid-template-columns: auto;
+        display: 15px;
+        grid-row: auto;
+        
+       }
+       input[type=text], select {
+        background-color:lightblue;
+        margin: 15px 0;
+        display: inline-block;
+        border: 2px solid rgb(21, 21, 22);
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 15px;
+        text-align: center;
+      }
+      input[type=submit]:hover {
+        font-size: xx-large;
+        background-color: darkblue;
+      }
+</style>
+<body>
+    <h1 > Medical Insurance Charges calculation  </h1>
+    
+    <form action='/pred' method="post" >
+        <div>
+            <h2>
+            <label for="age">AGE</label><br>
+            <input type="text" name = "age" id = "age"><br>
+            <label for="sex">SEX</label><br>
+            <select name="sex" id="sex"><br>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+            <br>
+            <label for="bmi">BMI</label><br>
+            <input type="text" name="bmi" id ="bmi"><br>
+            <label for="children">CHILDREN" </label><br>
+            <input type="text" name = "children" id ="children"><br>
+            <label for="smoker">SMOKER</label><br>
+            <select name="smoker" id="smoker">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select><br>
+            <label for="region">REGION</label><br>
+            <select name="region" id="region">
+                <option value="northeast">northeast</option>
+                <option value="northwest">northwest</option>
+                <option value="southeast">southeast</option>
+                <option value="southwest">southwest</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+            
+        </div> 
+            
+    </form>      
+ 
+</body>
+</html> 
+        
+    
+    
