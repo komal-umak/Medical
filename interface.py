@@ -1,10 +1,8 @@
 
-from flask import Flask,jsonify,render_template,request
-from project_app.utilis import MedicalInsurance
+from flask import Flask,render_template,request
 import json
 import pickle
-# import config
-
+from utilis import MedicalInsurance
 app = Flask(__name__)
 
 #######################################################################################################
@@ -36,7 +34,7 @@ def get_pred():
     ob = MedicalInsurance(age,sex,bmi,children,smoker,region)
     charge = ob.get_predication()
     print(charge)
-    return render_template("after.html",predicted_charge=charge)
+    return render_template("index.html",predicted_charge=charge)
    
         
 
